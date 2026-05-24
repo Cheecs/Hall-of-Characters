@@ -404,5 +404,10 @@ body::before{
     .fantasy-text{
        font-size: 80%;
     }
+
+    #logo{
+        height: auto;
+        width: 60%;
+    }
 }
 
