@@ -32,7 +32,7 @@
     box-sizing:border-box;
 }
 
-html, body{
+html,body{
     width:100%;
     min-height:100%;
     overflow-x:hidden;
@@ -45,7 +45,7 @@ html, body{
    MAIN BACKGROUND
 ========================= */
 
-body{
+html,body{
     position:relative;
 
     background:
@@ -65,61 +65,14 @@ body::before{
     inset:0;
 
     background-image:
-        linear-gradient(
+        linear-gradient(to bottom,
             rgba(255,255,255,0.015),
             rgba(255,255,255,0.01)
-        ),
-        url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+        );
 
     opacity:0.35;
     pointer-events:none;
     z-index:-3;
-}
-
-/* =========================
-   MEDIEVAL FOG EFFECT
-========================= */
-
-body::after{
-    content:"";
-    position:fixed;
-    inset:-20%;
-
-    background:
-        radial-gradient(
-            circle at 20% 30%,
-            rgba(255,255,255,0.04),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 80% 20%,
-            rgba(255,255,255,0.03),
-            transparent 25%
-        ),
-
-        radial-gradient(
-            circle at 50% 80%,
-            rgba(255,255,255,0.02),
-            transparent 30%
-        );
-
-    filter: blur(60px);
-
-    animation: fogMove 30s ease-in-out infinite alternate;
-
-    pointer-events:none;
-    z-index:-2;
-}
-
-@keyframes fogMove{
-    from{
-        transform:translateX(-30px) translateY(0px);
-    }
-
-    to{
-        transform:translateX(30px) translateY(-20px);
-    }
 }
 
 /* =========================
@@ -452,3 +405,4 @@ body::after{
        font-size: 80%;
     }
 }
+
