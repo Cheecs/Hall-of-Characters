@@ -3,14 +3,22 @@
    WOODEN TABLE VERSION
 ========================= */
 
+.back{
+    text-decoration: none!important;
+}
+
+.back:hover{
+   font-size: 25px;
+   transition: 0.2s;
+}
+
 .character-detail-page{
     min-height:100vh;
 
-    padding:80px 40px;
-
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
+    flex-direction: column;
 
     position:relative;
 
@@ -477,4 +485,9 @@
     .character-title{
         font-size:2.2rem;
     }
+}
+
+.modifica{
+    display: flex;
+    align-items:flex-end;
 }

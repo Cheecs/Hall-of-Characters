@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    let cards = $(".character-card").click(function() {
+        let id = $(this).prop("id");
+        window.location.href = `detail.html?id=${id}`;
+    });
+
     controllaLarghezza();
 
     $(window).resize(function() {
