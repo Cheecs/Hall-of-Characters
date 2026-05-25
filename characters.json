@@ -1,5 +1,6 @@
 {
     "Armon": {
+        "id":1 ,
         "Nome": "Armon",
         "Specie": "Mezz'elfo",
         "Descrizione": "{placeholder descrizione}",
